@@ -68,5 +68,7 @@
 		</array>
 		<key>UIStatusBarHidden</key>
 		<false/>
+		<key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Save ticket to gallery</string>
 	</dict>
 </plist>
