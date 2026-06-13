@@ -3,21 +3,26 @@ import 'package:x_events/pages/events_list_page.dart';
 import 'package:x_events/pages/records_page.dart';
 import 'package:x_events/pages/tickets_list_page.dart';
 
-class MainPage extends StatefulWidget {
-  const MainPage({super.key});
+
+class AppNavigation  extends StatefulWidget {
+  const AppNavigation ({super.key});
+
 
   @override
-  State<MainPage> createState() => _MainPageState();
+  State<AppNavigation > createState() => _MainPageState();
 }
 
-class _MainPageState extends State<MainPage> {
+
+class _MainPageState extends State<AppNavigation > {
   int _selectedIndex = 0;
+
 
   final List<Widget> _screens = const [
     EventsListPage(),
     TicketsListPage(),
     RecordsPage(),
   ];
+
 
   @override
   Widget build(BuildContext context) {
