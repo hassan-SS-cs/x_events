@@ -4,8 +4,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class EventDetailsPage extends StatefulWidget {
   final EventModel event;
-  const EventDetailsPage({super.key, required this.event});
-
+  final VoidCallback onBack;
+  const EventDetailsPage({
+    super.key,
+    required this.event,
+    required this.onBack,
+  });
   @override
   State<EventDetailsPage> createState() => _EventDetailsPageState();
 }
@@ -30,7 +34,13 @@ class _EventDetailsPageState extends State<EventDetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Event Details')),
+      appBar: AppBar(
+        title: const Text('Event Details'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: widget.onBack,
+        ),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [

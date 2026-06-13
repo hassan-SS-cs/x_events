@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:x_events/models/event_model.dart';
-import 'package:x_events/pages/event_details_page.dart';
 
 class EventsListPage extends StatefulWidget {
-  const EventsListPage({super.key});
+  final Function(EventModel) onEventSelected;
+  const EventsListPage({super.key, required this.onEventSelected});
 
   @override
   State<EventsListPage> createState() => _EventsListPageState();
@@ -99,13 +99,7 @@ class _EventsListPageState extends State<EventsListPage> {
                   ),
                   onTap: () async {
                     await _markAsRead(event);
-                    if (!mounted) return;
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => EventDetailsPage(event: event),
-                      ),
-                    );
+                    widget.onEventSelected(event);
                   },
                 );
               },
