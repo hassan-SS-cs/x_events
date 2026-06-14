@@ -70,5 +70,7 @@
 		<false/>
 		<key>NSPhotoLibraryAddUsageDescription</key>
     <string>Save ticket to gallery</string>
+	<key>NSMicrophoneUsageDescription</key>
+<string>Record audio for submissions</string>
 	</dict>
 </plist>
