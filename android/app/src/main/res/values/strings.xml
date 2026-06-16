@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shortcut_events">Events</string>
+    <string name="shortcut_tickets">Tickets</string>
+    <string name="shortcut_records">Records</string>
+</resources>
