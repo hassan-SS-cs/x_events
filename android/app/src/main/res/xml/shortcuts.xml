@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="events"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_events">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.x_events"
+            android:targetClass="com.example.x_events.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="tickets"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_tickets">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.x_events"
+            android:targetClass="com.example.x_events.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="records"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_records">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.x_events"
+            android:targetClass="com.example.x_events.MainActivity" />
+    </shortcut>
+
+</shortcuts>
